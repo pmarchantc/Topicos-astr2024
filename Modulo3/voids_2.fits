@@ -1,0 +1,193 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                 8291 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 4.2-debian (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2024-07-04T18:01:39
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<RESOURCE>
+  <COOSYS ID="t1-coosys-1" equinox="J2000" system="eq_FK5"/>
+  <COOSYS ID="t1-coosys-2" equinox="B1950" system="eq_FK4"/>
+</RESOURCE>
+<TABLE name="Joined" nrows="30">
+<DESCRIPTION>
+Coordinates and magnitudes of galaxies in this study
+</DESCRIPTION>
+<PARAM arraysize="30" datatype="char" name="ivoid" value="ivo://cds.vizier/j/aj/118/2561">
+<DESCRIPTION>IVOID of underlying data collection</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="10" datatype="char" name="creator" value="Grogin N.A">
+<DESCRIPTION>First author or institution</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="27" datatype="char" name="cites" value="bibcode:1999AJ....118.2561G">
+<DESCRIPTION>Article or Data origin sources</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="26" datatype="char" name="editor" value="Astronomical Journal (AAS)">
+<DESCRIPTION>Editor name (article)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="4" datatype="char" name="original_date" value="1999">
+<DESCRIPTION>Year of the article publication</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="55" datatype="char" name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/118/2561">
+<DESCRIPTION>Dataset landing page</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="citation" value="doi:10.26093/cds/vizier.51182561">
+<DESCRIPTION>Dataset identifier that can be used for citation</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="10" datatype="char" name="publication_date" value="2023-04-06">
+<DESCRIPTION>Date of first publication in the data centre</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="54" datatype="char" name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">
+<DESCRIPTION>Licence URI</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="matches" value="296">
+<DESCRIPTION>matching records</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="25" datatype="char" name="Warning" value="vc_coo can't change epoch"/>
+<PARAM arraysize="44" datatype="char" name="Warning" value="increase the precision for computed column 8"/>
+<PARAM arraysize="44" datatype="char" name="Warning" value="increase the precision for computed column 8"/>
+<PARAM arraysize="49" datatype="char" name="Warning" value="main column 1098 - link column not generated Name"/>
+<PARAM arraysize="3" datatype="char" name="service_protocol" value="ASU">
+<DESCRIPTION>IVOID of the protocol through which the data was retrieved</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="19" datatype="char" name="request_date" value="2024-07-04T16:43:52">
+<DESCRIPTION>Query execution date</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="139" datatype="char" name="request" value="https://vizier.u-strasbg.fr/viz-bin/votable?-source=J%2fAJ%2f118%2f2561&amp;-oc.form=dec&amp;-out.meta=Dhul&amp;-out.add=_RAJ%2C_DEJ&amp;-out.max=unlimited">
+<DESCRIPTION>Full request URL</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="23" datatype="char" name="contact" value="cds-question@unistra.fr">
+<DESCRIPTION>Email or URL to contact publisher</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="6" datatype="char" name="server_software" value="7.33.3">
+<DESCRIPTION>Software version</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="publisher" value="CDS">
+<DESCRIPTION>Data centre that produced the VOTable</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="27" datatype="char" name="First input table" value="1: AGN_practico_topicos.dat"/>
+<PARAM arraysize="24" datatype="char" name="Second input table" value="23: J_AJ_118_2561_table2"/>
+<FIELD datatype="short" name="PLATE">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="int" name="MJD">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="short" name="FIB">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="ra"/>
+<FIELD datatype="double" name="dec"/>
+<FIELD datatype="float" name="z"/>
+<FIELD datatype="double" name="Mu"/>
+<FIELD datatype="double" name="Mg"/>
+<FIELD datatype="double" name="Mr"/>
+<FIELD datatype="double" name="Mi"/>
+<FIELD datatype="double" name="Mz"/>
+<FIELD datatype="float" name="concind"/>
+<FIELD datatype="float" name="stmass"/>
+<FIELD datatype="double" name="sfrmst"/>
+<FIELD datatype="float" name="sfr"/>
+<FIELD datatype="float" name="dn4000"/>
+<FIELD datatype="float" name="bpty"/>
+<FIELD datatype="float" name="bptx"/>
+<FIELD datatype="float" name="bptx2"/>
+<FIELD datatype="float" name="bptx3"/>
+<FIELD datatype="double" name="SN_Hbeta"/>
+<FIELD datatype="double" name="SN_OIII"/>
+<FIELD datatype="double" name="SN_OI"/>
+<FIELD datatype="double" name="SN_Halpha"/>
+<FIELD datatype="double" name="SN_NII"/>
+<FIELD datatype="double" name="SN_SII6717"/>
+<FIELD datatype="double" name="SN_SII6731"/>
+<FIELD datatype="short" name="agn_type">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="LumOIII"/>
+<FIELD datatype="double" name="logMBH"/>
+<FIELD datatype="double" name="R"/>
+<FIELD datatype="double" name="_RAJ2000" precision="7" ref="t1-coosys-1" ucd="pos.eq.ra" unit="deg" width="11">
+<DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DEJ2000" precision="7" ref="t1-coosys-1" ucd="pos.eq.dec" unit="deg" width="11">
+<DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="7" datatype="char" name="Survey" ucd="src.class.starGalaxy">
+<DESCRIPTION>Survey that galaxy was choosen from (1)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="12" datatype="char" name="Name" ucd="meta.id;meta.main">
+<DESCRIPTION>Galaxy name</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="RAB1950" ref="t1-coosys-2" ucd="pos.eq.ra;meta.main">
+<DESCRIPTION>Right ascension (B1950)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="DEB1950" ref="t1-coosys-2" ucd="pos.eq.dec;meta.main">
+<DESCRIPTION>Declination (B1950)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="cz" ucd="src.redshift;pos.lsr" unit="km/s" width="5">
+<DESCRIPTION>Redshift corrected to the local standard of rest (see equation 2)</DESCRIPTION>
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="Den" precision="2" ucd="phys.density" width="5">
+<DESCRIPTION>Smoothed galaxy density (see equation 7)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Bmag" precision="2" ucd="phot.mag;em.opt.B" unit="mag" width="5">
+<DESCRIPTION>Isophotal Cousins B band magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Rmag" precision="2" ucd="phot.mag;em.opt.R" unit="mag" width="5">
+<DESCRIPTION>Isophotal Cousins R band magnitude</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="_RA.icrs" ucd="pos.eq.ra">
+<DESCRIPTION>Right ascension (ICRS) (computed by VizieR, not part of the original data)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="_DE.icrs" ucd="pos.eq.dec">
+<DESCRIPTION>Declination (ICRS) (computed by VizieR, not part of the original data)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Separation" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                  293 / width of table in bytes                        NAXIS2  =                   30 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                   44 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'PLATE   '           / label for column 1                             TFORM1  = 'I       '           / format for column 1                            TTYPE2  = 'MJD     '           / label for column 2                             TFORM2  = 'J       '           / format for column 2                            TTYPE3  = 'FIB     '           / label for column 3                             TFORM3  = 'I       '           / format for column 3                            TTYPE4  = 'ra      '           / label for column 4                             TFORM4  = 'D       '           / format for column 4                            TTYPE5  = 'dec     '           / label for column 5                             TFORM5  = 'D       '           / format for column 5                            TTYPE6  = 'z       '           / label for column 6                             TFORM6  = 'E       '           / format for column 6                            TTYPE7  = 'Mu      '           / label for column 7                             TFORM7  = 'D       '           / format for column 7                            TTYPE8  = 'Mg      '           / label for column 8                             TFORM8  = 'D       '           / format for column 8                            TTYPE9  = 'Mr      '           / label for column 9                             TFORM9  = 'D       '           / format for column 9                            TTYPE10 = 'Mi      '           / label for column 10                            TFORM10 = 'D       '           / format for column 10                           TTYPE11 = 'Mz      '           / label for column 11                            TFORM11 = 'D       '           / format for column 11                           TTYPE12 = 'concind '           / label for column 12                            TFORM12 = 'E       '           / format for column 12                           TTYPE13 = 'stmass  '           / label for column 13                            TFORM13 = 'E       '           / format for column 13                           TTYPE14 = 'sfrmst  '           / label for column 14                            TFORM14 = 'D       '           / format for column 14                           TTYPE15 = 'sfr     '           / label for column 15                            TFORM15 = 'E       '           / format for column 15                           TTYPE16 = 'dn4000  '           / label for column 16                            TFORM16 = 'E       '           / format for column 16                           TTYPE17 = 'bpty    '           / label for column 17                            TFORM17 = 'E       '           / format for column 17                           TTYPE18 = 'bptx    '           / label for column 18                            TFORM18 = 'E       '           / format for column 18                           TTYPE19 = 'bptx2   '           / label for column 19                            TFORM19 = 'E       '           / format for column 19                           TTYPE20 = 'bptx3   '           / label for column 20                            TFORM20 = 'E       '           / format for column 20                           TTYPE21 = 'SN_Hbeta'           / label for column 21                            TFORM21 = 'D       '           / format for column 21                           TTYPE22 = 'SN_OIII '           / label for column 22                            TFORM22 = 'D       '           / format for column 22                           TTYPE23 = 'SN_OI   '           / label for column 23                            TFORM23 = 'D       '           / format for column 23                           TTYPE24 = 'SN_Halpha'          / label for column 24                            TFORM24 = 'D       '           / format for column 24                           TTYPE25 = 'SN_NII  '           / label for column 25                            TFORM25 = 'D       '           / format for column 25                           TTYPE26 = 'SN_SII6717'         / label for column 26                            TFORM26 = 'D       '           / format for column 26                           TTYPE27 = 'SN_SII6731'         / label for column 27                            TFORM27 = 'D       '           / format for column 27                           TTYPE28 = 'agn_type'           / label for column 28                            TFORM28 = 'I       '           / format for column 28                           TTYPE29 = 'LumOIII '           / label for column 29                            TFORM29 = 'D       '           / format for column 29                           TTYPE30 = 'logMBH  '           / label for column 30                            TFORM30 = 'D       '           / format for column 30                           TTYPE31 = 'R       '           / label for column 31                            TFORM31 = 'D       '           / format for column 31                           TTYPE32 = '_RAJ2000'           / label for column 32                            TFORM32 = 'D       '           / format for column 32                           TUNIT32 = 'deg     '           / units for column 32                            TCOMM32 = 'Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part'TUCD32  = 'pos.eq.ra'                                                           TTYPE33 = '_DEJ2000'           / label for column 33                            TFORM33 = 'D       '           / format for column 33                           TUNIT33 = 'deg     '           / units for column 33                            TCOMM33 = 'Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of 'TUCD33  = 'pos.eq.dec'                                                          TTYPE34 = 'Survey  '           / label for column 34                            TFORM34 = '7A      '           / format for column 34                           TCOMM34 = 'Survey that galaxy was choosen from (1)'                             TUCD34  = 'src.class.starGalaxy'                                                TTYPE35 = 'Name    '           / label for column 35                            TFORM35 = '12A     '           / format for column 35                           TCOMM35 = 'Galaxy name'                                                         TUCD35  = 'meta.id;meta.main'                                                   TTYPE36 = 'RAB1950 '           / label for column 36                            TFORM36 = '11A     '           / format for column 36                           TCOMM36 = 'Right ascension (B1950)'                                             TUCD36  = 'pos.eq.ra;meta.main'                                                 TTYPE37 = 'DEB1950 '           / label for column 37                            TFORM37 = '11A     '           / format for column 37                           TCOMM37 = 'Declination (B1950)'                                                 TUCD37  = 'pos.eq.dec;meta.main'                                                TTYPE38 = 'cz      '           / label for column 38                            TFORM38 = 'J       '           / format for column 38                           TUNIT38 = 'km/s    '           / units for column 38                            TCOMM38 = 'Redshift corrected to the local standard of rest (see equation 2)'   TUCD38  = 'src.redshift;pos.lsr'                                                TTYPE39 = 'Den     '           / label for column 39                            TFORM39 = 'E       '           / format for column 39                           TCOMM39 = 'Smoothed galaxy density (see equation 7)'                            TUCD39  = 'phys.density'                                                        TTYPE40 = 'Bmag    '           / label for column 40                            TFORM40 = 'E       '           / format for column 40                           TUNIT40 = 'mag     '           / units for column 40                            TCOMM40 = 'Isophotal Cousins B band magnitude'                                  TUCD40  = 'phot.mag;em.opt.B'                                                   TTYPE41 = 'Rmag    '           / label for column 41                            TFORM41 = 'E       '           / format for column 41                           TUNIT41 = 'mag     '           / units for column 41                            TCOMM41 = 'Isophotal Cousins R band magnitude'                                  TUCD41  = 'phot.mag;em.opt.R'                                                   TTYPE42 = '_RA.icrs'           / label for column 42                            TFORM42 = '11A     '           / format for column 42                           TCOMM42 = 'Right ascension (ICRS) (computed by VizieR, not part of the original'TUCD42  = 'pos.eq.ra'                                                           TTYPE43 = '_DE.icrs'           / label for column 43                            TFORM43 = '11A     '           / format for column 43                           TCOMM43 = 'Declination (ICRS) (computed by VizieR, not part of the original dat'TUCD43  = 'pos.eq.dec'                                                          TTYPE44 = 'Separation'         / label for column 44                            TFORM44 = 'D       '           / format for column 44                           TUNIT44 = 'arcsec  '           / units for column 44                            TCOMM44 = 'Distance between matched objects along a great circle'               TUCD44  = 'pos.angDistance'                                                     DATE-HDU= '2024-07-04T18:01:39' / Date of HDU creation (UTC)                    STILVERS= '4.2-debian'         / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             d  œ\ M@jÏAR∞¶¸@C(ù≠˚P<∂Æ}¿2wZ1§Ω∫¿3á·⁄{9¿46ÜÉ<`¿4x¸PH¿4∞ïloT@¬AK^¿$Eå“
+˙º˚~ë?¥ÍK>|PHæd¬¯ΩÒuéøf$›@(ß‚Ç@∑Ä@0[6zêó@€¿6‚Î@@2 Wßá@3€ÁlãCñ@+ncä	@%›}øHÃ d@-îbB≥,@Ÿô™<øÛMπ›[‹@@jÏD˛;@CéF@CfA2   14194+3820  14 19 28.51+38 20 44.2  ë?333AvffAf·H14 21 31.99+38 07 04.7?˛uÏ‰I5R~  Œåg@n5[ç≈P@>\ñ$<≥g°¿3iÉQY¿4»⁄„Êƒ∆¿5˛Ã¢€aª¿6†vû¬ŒF¿7sBÌªZ@+åTA0¥¢¿&Ãùù4XÕæò¸P?⁄ºº≤ïÍæÖàæW
+=ø|q@(g8}ø@#»ËßÊõ@Û¸PH@D¸PH@=‡uˆ˝!ˇ@-YıY≥–}@)0Ú{≤˛≈ d@Áƒëw˚@/âú)∏·ø˝*»„ò@n5_,Äëã@>:ZMSCfA2   16046+3014  16 04 40.61+30 13 54.1  L?z·Ac
+=ALÃÕ16 06 40.29+30 05 54.7@√Ã∞Üˇ{_  ”® I@kÙ7g	˙U@8˙¯YBë<Ød¿2]9ñ˙ÇË¿3…⁄{9¿4üŒ1P⁄‰¿5Ÿjj&¿5Iéuy(·@A€MA%ÏW¿%+‚CVóæ(¡U?Ωëh>]}øæ
+=qæa|øì˜œ@-pbM“Ò™@1÷$›/†@ò*ô0æ@BÒa‰˜e˛@;t®¡T…Ü@-RΩ<64@%™0U2a| d@ôcLD>ï@∂ôΩÿ∫øtŸ√Jhî@kÙ7ﬁ]Ó…@8˝,)CCfA2   14523+2413  14 52 18.41+24 13 46.9  \?Tz·Au¬èA_\)14 54 31.64+24 01 38.3?ÃÑNuzË≈s  “? :@m7†£∂¢@7ÄÒ`Æó<ñªô¿2»‰∂0©¿4P(°ﬂπ9¿5Y◊4.€∂¿5ﬂ>’'Â¿6"d2ãn@√A-œ´¿&5ÁBôÿÑæFˆî?¨õ¶>ºC->QΩ˙·HøOä	@,©«y¶µ@<fffff@<S∂E° ¡@P=ú‡u˜@Xõ∆ßÔù≤@KÛ∂E°À@C¡£n.±ƒ d@êŸopê@ïÏÂ∂vöø‡(û¢80P@m7ùëuﬁ©@7Ä—5ËYCfA2   IC 4553     15 32 46.78+23 40 08.0  ‹>ı¬èA_33AJ∏R15 34 57.12+23 30 11.5@("§A‡nr  ”ø h@m.Ö†æQ	@5"ﬁ⁄ÏJA<¿>¿2ÎY›¡Áñ¿4àöu%F¿5Ü"Âﬁ ¿5ı›n¿Y¿6BÂﬁ m@/¶µA-àf¿'7Êp‚¡+ø8K^?Í&Å=v˝"æ,"hæ-\˚øêƒú@,0oiDg8@+bÇ@∑Ä4@Ov_ÿÆ@=j¨ŸË>B@4)0æÌ)@)\Ñµ‹∆?@ ùŸb∂Æ d@}#º$ü@á"3Äı¿¸Ì¬Ê¨@m.à‘»(@5"I©ó>CfA2   15317+2119  15 31 36.00+21 18 11.9  ˛?ö·HAlı√AUôö15 33 49.01+21 08 11.3?˘¸«bã|®   µe@3∞ËŸrÕ}@-¸ã y¢É<ª¬π¿3UÎŸéu¿4Çﬁ®óc^¿5>‹]càf¿5êóc^t*¿5º(M¸„@ˇmA&ä¿$âY_Ì¶a>,"h?∂L0æ±[WæzC˛æ¬∂Æø≥…Ô@:Êfffff@&î„º”ZÜ@:·GÆ{@Q=Œ_o“@F¥9XbN@48_ˆîF@2HÀí: »@ò#Wâﬁ3@«;∑n°øº^‡∂A∏@3∞€ê¥Óä@-¸}ıœ$ñCfA2   01161+1445  01 16 06.17+14 43 49.8  n?
+=Afè\AUÎÖ01 18 45.80+14 59 35.3?ÈM,cîÒÀ®   µF@5Wúæﬂ§@-≠lµ5 ì<≥æ¿2B_Ñ ’|¿4◊ù
+gb¿52πMîâ¿5¶ßGÿÊ¿6ªò«‚Ç@9]ˆA-qﬁ¿&e…Ø·⁄æé_?Ï`™ºt!æ$%ØæƒÅoø{∆®@$Bh	‘ï@"~Ïø±[W@Vìu@4‹ÁØ∑È@-⁄Ócä	@#n.±ƒ3@ÑM:ì »@x(:£°•@º*ÃB€¿¿à#>t6@5Wûﬁ|¯y@-≠Y‹hmCfA2   IC 1698     01 22 42.10+14 34 43.3  4?Tz·Ao\)AW3301 25 22.14+14 50 18.9?·=ßÊ%¬®   µ @68Õ»uO7@+ñm≠o<≠“¿2ÜœÈ∑ø¿3⁄)≥˙n¿4∫ÎC,•¿5ÄùIQÉ¿5_¶76ÕÚ@ ÌëA&˘€¿$ÚÎC,•<2ïÍ?…ıZΩœv`æ8Gæò‘˛øëå~@&@—∑X‚@oOÑM@	cä	ﬁ@@í∂Æ}Vm@5ˆìtº@$∏∫«À)@ M∏∫«À »@HdΩ—ÜK@7˛≤E†¢ø˚æg—–i\@68“√Ü“Ì@+ñoÖ…ÿ˝CfA2   01262+1331  01 26 13.46+13 32 07.8  c?z·HAp(ˆA^{01 28 53.27+13 47 37.8?—â}Ü∞®   µ@4˜¬C‹œ@,πE∂√v<ˇó$¿2ÿ(°ﬂπ9¿49ÉQX∏(¿4Õ˝…ƒ€¿5Iêl .¿4õ∫4C‘k@–hA)Ÿ¿#’≤‘‘K?Cn/?éö‘Ω»æ∞Ú|ø ƒúø≤¶L@Zà†ê-‡@VkÖ∏QÏ@I˝ä⁄πı@e ŸË>B[@gÆ∂Æ}Vm@ZÓàŒp:˚@X÷u%F
+¶ »@Ç»`á@ÈJõ‰Q¥ø„9÷ú")h@4Áì¯oÈ@,πOpÄõúCfA2   01174+1406  01 17 23.26+14 05 59.3  %?†  Ar=qAbè\01 20 02.72+14 21 43.0?ÏŸr>NﬁÎ  Ã
+@vÕ9⁄a@,´´!ÅZ<ú∂Ö¿2I¿D(M˝¿3£¯vû¬Œ¿4í®ÎF4ò¿4˜E‡¥·¿5.ˇP3@QS¯A%ﬁj¿%Ω∫
+RiΩ¸Ìë?ª∂Fæôöæï%Fø<üøœ†˘@B	◊€Ùá˝@5ÿy=Ÿc@_ˆîF@S≤ïÈ·±@H˚…ÓÀ˚@4
+~˘€"—@.‹∆? »@L^»„hé@µˆÛ¢#øı¶`™˛T@vœ5'):@,´òúCòCfA2   23310+1405  23 30 55.42+14 03 31.7  ??É◊
+AtQÏA]¬è23 33 27.14+14 20 06.5?¸3(5mi}  ŒZ8@n5Æ)sñ—@?‰¯ä.√<Ü¿2™¥∑,R¿4L
+–=öï¿5W>’'Â¿5›˘ú8∞K¿62WßÜ¬'@?2ﬂA/â7¿%ÂF
+¶L0=Å%?ølãæ›Êõæ:ëøñSø¥6@A-?|Ìëh@)¿ÎÌ˙C˛@!º”ZÖáî@Xú¡T…Ö@TêÿD–©@@Z-V@56‚ÎC- »@£!?•}÷@®¯À4-øÙ^-nŸ\@n5≠Iy∆ï@?‰¯&Ì™ìCfA2   16047+3201 N16 04 45.41+32 01 39.0  "‰@l(ˆAsÆA\£◊16 06 42.58+31 53 39.9?‘‰YøËÙ{#  œ∂à@n˙‡gH‰u@6≤s>ª˝r<∆ºË¿3%F
+¶L¿4O'j@¿5.T«éü¿5ï7ü©~¿5Ÿ€ ñëß@”√A)†ê¿%“2LÉfQæáÀ?∑¡ææ›ŸæÜˆîæ∂°bø≤&Å@?;πå~($@+Û∂E°À@ A@N§©@TÁ4÷°aÂ@P1fœAÚ@A¨ãCïÅ@<[P∞Ú{≥ »@‘æÙ›f@Q`JN^øÎÂ‚´á¿@n˙‡ú"
+@6≤vß&JCfA2   16292+2248  16 29 13.70+22 48 11.9  „>ÊffAr∏RA_
+=16 31 21.58+22 41 49.6? ?S`m⁄Ùå  œö‡@n}	Pv:@?RB“Ñù<µ‹∆¿1&ÛMj¿2ñgµÒæı¿3è≈Åo ¿4æ"Âﬁ¿4R<»ﬁ*√@-gMA""h¿%3I{t•æ’ˆ˝?√tºæN;ÕæÉ¢úæâ∫^øêK^@2»7¥¢3ú@&2 Wßá@ T„º”ZÜ@OŒ_o“@E≤ïÈ‚@6◊ŒŸá+@3zxl"h »@23Ò}t@	U'å,øÔF´ hu¿@n}OèäL@?R;QÊMCfA2   16136+3126  16 13 40.49+31 26 40.9  ù>ÊffAÅÆAnè\16 15 37.74+31 19 16.4?‡Úï@ tÌ  Œ )@mU!˝iı@Bz´GA1<òJ¿2A5¸;Oa¿3¨dôÃ£¿4™°†œ¿5,˘]Nê¿5\oaë@=òJA'Ò™¿%Y∫^5?}Ω˙C˛?√aæy#£æ4¢4æÃ≤ñø´”√@H"·GÆ{@=&ÄùIR@#}VlÙ@W<*ô0æ@Séi≠B√ @AÊßÔù≤-@<é($x »@9Ìs‘}Ò@r–S≈hø¯„äô˝‹@mU!√Û‡@Bz¨xôn—CfA2   15368+3707  15 36 45.70+37 07 13.1  w?
+=qAmôöAW3315 38 38.47+36 57 30.2?◊õ<≤Ä)  –˜E@n|Î˛¡;ü@<(ôùÀWÇ<Õ5®¿2∫'(bıô¿3¸”ZÖáî¿4«˜zˆ@d¿5p:˚~ë¿5MVlÙ!@—cA$Ö¿%,oTK≤æ}Û∂?—¯°æ∂æï?}ø!≥ø}Ÿ@x†ê-‡@¯‘˝Û∂F@3–|Ñµ›@6Ä4m≈÷9@&*JåLò@ÕûÉ‰%Ø@ ZÓcä	 »@}S5ﬂ@Å‚Jò˙ø˘í.<Ωål@n|Ì,ï<@<(â˜e&ÀCfA2   NGC 6102    16 13 35.30+28 16 54.8  ?è\Au∏Ab{16 15 36.95+28 09 30.1?Ô$@ﬂ±÷b  ”÷Ä@kÛµ∑í@<éÔ¨.<ªDÂ¿2ß®mqÛ¿4O{û‰¿52˜èÓıÌ¿5öWßÜ¬'¿5›Q÷åi/@∫«A*=Ÿ¿%k´`k{ºCñ?“‰èæ 7æh¡UæÕûÑø«O@=∆Èx‘˝Ù@6ÿD–@¶L/É{J@QuDg8~@Ié¡Ω•@7¸ÃÃÃÃÕ@1ÄbM“Ò™ »@o…ahÉ-@”é™øCø˘è%Zˇ§@kÛ
+“å)o@<}TøtıCfA2   NGC 5780    14 52 14.50+29 08 30.8  /?ôöAlQÏAUôö14 54 22.82+28 56 21.9@ág∫¶3∏h  “r¡@lQ?Ó,òÂ@9»cœ≥1<µ ¿2ÌÁÍ_ÑÀ¿4Ez$âL¿5-±ÖH©Ω¿5óëÊFÒV¿5‰Ω∫
+Ri@<$5A*x’¿%œÈ∑ø><Ñ∂?«ŒŸΩ‰ZæiDgøú‡ø∏$@2&¡Ω•@(π€"–Â`@Z¨1'@I∏uˆ˝!ˇ@@fŸá+@$§g8}ø@QÎÖ∏R »@çr≈X@ÜèuWq"øÛ‰uæH`»@lQ>‚ˇ>9@9»kP∞Ú|CfA2   15039+2558  15 03 58.99+25 58 31.1  `?^∏RAo33AW\)15 06 09.34+25 46 58.4?‚´˜Ö]≥I  ”§ *@jff8Ûg@>æcä	<ŒŸ¿1¨;˜'j¿3≈+”√a¿4ŒH@·qü¿5M»uO7v¿5ëJÙÿE@-œ’A*`™¿'1Ø:Œƒøefœ?∑;dæã(æ>´6æ¸ûÌø¥˜f@Bpuˆ˝!ˇ@4eµsÍ≥h@+mw1è≈@\T	‘ï+@ZdÿD–@D‰ûÏø±[@Baú‡uˆ˝ »@BIµ=©@fg ø“;ª%ü`@jfd™⁄3æ@>æd_˚ÈCfA2   14025+3059  14 02 34.70+30 58 57.0   ?ﬁ∏RAtQÏA]p§14 04 47.95+30 44 37.4?‡”‚PyidJ  ”¢ m@jdÁ3π@=31;‚.^<»¥9¿2úRÁ-°#¿3ƒHj“‹±¿4o˚iòJ¿4∞ü±¿4«pyÂü,?ˇä]A^û¿%jAcø:ÙÒ?ö‰èø?æÅÚø'ìﬁø–Ô5@:8¸PH@!¸PH@
+ÙSéÛMj@R™ö‘,<ü@J(åÁ∞@,ƒ2 W®@+©«y¶µ »@Ï’‹–Tà@19*„*øÍ!Ú‚‘u@jdÂ"œ7·@=3‹>YÿCfA2   14023+2926  14 02 22.20+29 26 19.0  Ù?ó
+=Az{Aeôö14 04 36.71+29 11 58.9?ÛA^–àı∆  “ @@i¿äΩ]ƒ @9©€áz≥%=GO¿3ü6&,∫¿57-°"˙◊¿6N„í·Ô¿6Çœï‘Ë˚¿6¿‚e+‘@pπA0kQ¿%ö»`VÅÌ>çÌ)?¿«„æKCñæ[ÙàæÕ5®ø∞ñº@1ŒŸá+@#˛êˇó$t@	£S&¬@Hpr∞ ƒú@AlÙ!-@-1Œ_p@'ıÈ·∞â† »@~°=U#@‚‹˝ˆ¡ˆø˝êÔÜ{»@i¿É‹-í‡@9©¬çÆ©ÃCfA2   13418+2555  13 41 44.11+25 54 50.0  8¬@°ÎÖAxÃÕAc\)13 44 03.86+25 39 47.2@hLhJ	B  “XK@iÙ≈kDπ@<&KòÑ∆§<¿÷ı¿2{¯vû¬Œ¿3ı™˜èÓˆ¿4æ"¶Ûı¿5(ı¬è\¿5VYJÙÿ@]:A$)«¿%œˆîFtø>´?»öæà¥9æ©˚Áæ◊çPøΩ8Ô@-∏Ô4÷°b@2-V@ }Û∂E°À@E‘ÍJåM@5˚I∫^@%em\˙¨⁄@ _!-w1ê »@⁄+#Ç@ﬁŸaÀ«üøÙ∏˘' @iÙƒ@l ⁄@<&0˘ùpCfA2   13482+2824  13 48 18.50+28 23 47.0  ”?´ÖAn∏RA^{13 50 35.75+28 08 57.1?¯}®Z∏Ω/›  ÀÔ¬@tzèë£+@*ìç£¬à<•&ñ¿2∂≥ªÉœ-¿4o‰yëºV¿5p˜π‡`˛¿5Ú'–(°‡¿61˜¯ Åô@R@·A.Œ¿&Ã<ûÏø±æ·Ú?Ù¢4=éæ‡Ω‚eæÆ§©øY¿Ï@ìtºj@&Dg8}ø@™ô0æÌ@,¶ç∏∫«@0]Vì@Àí:*@%˝ä⁄πı »@÷˝ù√¯@"GûiÀ
+¿ñîK¶@tzéãHùˇ@*ìj§πàLCfA2   21482+1302  21 48 13.01+13 03 12.6  É>ÎÖAl  AQp§21 50 38.35+13 17 16.5?Ù–|Ã Ã•F  “< —@j•CÒ«@:åÿ©y·m<¿É¿1SœÄ‹3¿2ã'ª/Ï¿3W9m	◊¿3ú;Oag#¿3›»K]Ã@?ájAÃd¿$Ú¡*ÿﬂøa|?ØÔû>+P±æ∏†êæ™W®ø°0æ@MJ∞ ƒõ¶@Q-óˆ+jË@1◊¸π#¢ú@\óÒA [¿@U ƒõ•„@K$ë—N;Õ@G3àeîØO »@IO¡7‚@¨®Ê⁄¥?∞(∆ãÄ@j≥Zß@:åæâ¨Ω15R    324.005046  13 53 20.30+26 47 38.8  |?p£◊AÉôöAr·H13 55 37.99+26 32 59.2?¯(¨^~[®   µ£@4Ÿ,I4&x@.mÎ≠ÚÌ=¡j¿2∂ZöÄIf¿4î¿Y!Ü¿5ù-#Nπ°¿6¡Ω•ù¿6aº˝Kô@GïÅA0Xy¿)<»Û#yø«s?˜∞>L~(>%îØΩ‘,=øB∞!@8∫π§—‹@(tº£@ò≠û3\N@1àöu%F@;…¶µ(@%“:9äe@Hé,@TóÁÍ¨å@ 5ãÍÀ¿,ˇÿ<¶@4Ÿ&2ô∞@@.m◊‚™Ñ£CfA2   01207+1457  01 20 43.51+14 57 13.7  (ö@P£◊Av∏RA_
+=01 23 23.58+15 12 52.3?„ƒÀfÎz  Œ {@là˚∞ÂÊy@D°ﬂmπ@ˇ<Ì˙D¿3ô"S¿5c˜'j@¿6q}Ç‘¿6Á~=¡¿7A5¸;Oa@
+áA4∞ä¿(*ñëß\—ø?É{@Ì>±∑>kP±Ω≠w2ø8$@óX€chÖ@%P|Ñµ‹∆@—3c⁄õ@)“a|⁄Q@4y«y¶µ@¬√ºÇ“Æ@‘ØOÑM,@	â≤&Z@€≥˚ûp/¿§U¡ÿì™@là˙=~–@D°›:ZMCfA2   NGC 5888    15 11 17.30+41 27 02.2  "∞@(ˆAb∏RAJ=q15 13 07.33+41 15 52.4?·-¡çsÖü*  –¯S@n>ä.¬ã@=V7yÖ<≈óN¿1Sœ,˘]O¿2‚Nz∑VC¿3¬ÇË},|¿4*˝u‚l¿4n«d≠ˇÇ@A&A ÆÊ¿&Næﬂ§?Êøá i?œßá>"—Ω≠´üæc¢úømÊõ@)tÿD–@,“Ò©˚Á@¯Ô;åû	@B8[¿6„@=aﬁi≠Bƒ@+™¨î£@%ﬁ≈m\˙≠,@XΩ/!k@*yö\?øÂÛjT÷†@n>c6U@=V>æÅ∞oCenturyc21.DS      16 05 45.29+29 28 08.0  2?ôöAÉÎÖApz·16 07 45.92+29 20 12.8?·…›í¢]X  –ˆ h@kZH6e€@6ˆnπ?!<´Ks¿1≤'(bıô¿3hzçd◊Ò¿4^">iÉ¿4Õ>’'Â!¿5ÏÎØ@9A&4¿'Å7ÛåT7øß’g?⁄˚=v+k<ê-‡<©ìøC,•@ÅÚço¿@~Ì(åÁ@2ï‹u∑<@1€Ì˙C˛]@0ùOﬂ;dZ@$["–Â`B@Å$›/,@-≥1UÒ4@4çbîØ∞¿¥b}|¯@kZI<Ò"@6ˆ£NNBCfA2   14330+2311  14 33 01.10+23 10 50.2  ¿?(ˆAxÃÕAc3314 35 17.14+22 57 46.4?ÔxNG˝¸:i  ”ƒ˛@lcﬂ?ñ@5Úù◊ÏªÄ<©8¿28“^›)¿3ÏôÆíO"¿4ÏvÚ•§j¿5`ı¬è\)¿5§=F≤k¯@JÅôA*3ú¿(„œ,˘]Oø·0æ?˙@∏>Üçπ=^i≠æ^É‰ø5º@ãCú7Ã@)¿qué@£◊
+=q@)¯‘˝Û∂F@-HÀí:@‹wökP±@	Ë	‘ï+,@ÒwrIê¥@Ô˚pÅî¿˚7M·¿@lcﬂ2_Œù@5Úùn:p>CfA2   15062+2208  15 06 15.00+22 08 17.2  s?}p§As◊
+AYp§15 08 29.04+21 56 51.8?ü≠$n∞”•   m¨@-’ïö0òN@.©y“9<ï‘È¿2u‰£É'g¿4
+M++˝µ¿4˝∏QÎÖ¿5js’∫≤¿5§§“≤¿@T+A)
+=¿'óñ|ÆßHøï\˚?›ëh?rJ>ía|Ω#SøF@9KCïÅ%@X…+”√a@4ö≥g†˘	@L¿ñªò«„@Wõ4÷°aÂ@?™¨1'@@Ï(ı¬è\ê@˚D~G=@Ωˆ)v£§ø‹+≤¯∆p@-’ú}Y»@.©mtw°!CfA2   00570+1504  00 57 01.80+15 03 41.4  I?åÃÕAm¬èAV{00 59 40.13+15 19 51.3?◊=99‹ñºÏ  Ã	@vL@´˜j/@-Æ¸X´í¿<¥ˆ¿2Z“4Îö¿3⁄‡üËh4¿4ß)≤ÄÒ,¿5œVÍ»`¿5HD(M¸„@=,RA&Cñ¿%Ä<K	ÈéæúûÌ?ƒFt?D–=(Xyæ?.Iø]ëh@û∏QÎÖ@3G¥¢3ú@
+g†˘	k∫@4óX‚e,@5¬¯7¥¢@’È·∞â†@ˆ4ÍKê@±tç€ïÿ@@4Ë»H øÏv◊eë@@vL?“Œnç@-ÆÓ·µíCfA2   23445+1434  23 44 31.06+14 33 49.7  ∫?ê£◊Ap£◊A[3323 47 03.74+14 50 30.0?ÍC¨¥´Ì_                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

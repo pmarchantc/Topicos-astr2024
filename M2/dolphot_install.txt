@@ -1,0 +1,23 @@
+Crear ambiente:   https://github.com/charliekilpatrick/hst123
+DOLPHOT:          http://americano.dolphinsim.com/dolphot/
+DOLPHOT ACS:      americano.dolphinsim.com/dolphot/dolphot2.0.ACS.tar.gz
+
+- Descomprimir todo en la carpeta quq quiero como: 
+$ tar -xvzf _name_
+$ vim Makefile
+$ make
+
+export BASE_DIR = $(shell pwd) (original) —> Deben poner el directorio donde tienen dolphot 2.0
+#uncomment if you will be using the ACS module
+export USEACS=1
+
+-------------------------
+Para correr:
+1. Ir al directorio donde estan los files (data_fits)
+2. acsmask *.fits
+3. splitgroups *.fits
+4. calcsky F606W_j9ec41afq_flc.chip1 15 35 4 2.25 2.00
+5. repeat for each image chip1, chip2, and example (9 total)
+6. create image.param
+7. dolphot hlsp_angst_hst_acs-wfc_10523-ngc3031-halo-1_f814w_v1_ref.fits -pimage.param
+8. wait
